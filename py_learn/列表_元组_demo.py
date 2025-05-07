@@ -99,3 +99,10 @@ print(l.__sizeof__())
 l.append(5)
 print(l.__sizeof__())
 # 104 加入元素 5 之后，列表的空间不足，所以又额外分配了可以存储 4 个元素的空间
+
+l1 = [1, 2, 3]
+l2 = [1, 2, 3]
+l3 = l2
+print(id(l1))
+print(id(l2))
+print(id(l3))
